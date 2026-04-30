@@ -1,50 +1,41 @@
+@font-face {
+    font-family: 'Kangge'; /* Este es el nombre corto que le daremos para usarla */
+    src: url('fonts/Kangge.ttf'); /* Asegúrate de que el nombre del archivo sea EXACTAMENTE igual al que descargaste */
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #15151e;
+    background-color: #3d3939da;
     color: #ffffff;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #ffee00;
-    padding: 20px;
+    background-color: #20c271;
+    padding: 10px;
     text-align: center;
     box-shadow: 0 2px 10px rgba(0,0,0,0.5);
 }
 
 h1 {
+    font-family: 'Kangge', sans-serif; /* Aquí aplicamos la nueva fuente */
     margin: 0;
+    font-size: 3em; /* Puedes hacerla un poco más grande para que luzca más */
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
-header nav {
-  margin-top: 10px;
-}
-
-header nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 12px;
-  font-size: 0.95em;
-  opacity: 0.85;
-  transition: opacity 0.2s ease;
-}
-
-header nav a:hover {
-  opacity: 1;
-  text-decoration: underline;
-}
-
-header nav a.active {
-  opacity: 1;
-  font-weight: bold;
-  border-bottom: 2px solid white;
-  padding-bottom: 2px;
-}
-
 .container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.container2 {
     max-width: 1200px;
     margin: 30px auto;
     padding: 0 20px;
@@ -73,6 +64,14 @@ header nav a.active {
     align-items: center;
 }
 
+.team-header2 {
+    padding: 15px;
+    background-color: #c7a612;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .team-name {
     font-size: 1.2em;
     font-weight: bold;
@@ -94,7 +93,7 @@ header nav a.active {
 .driver-number {
     font-size: 1.5em;
     font-weight: bold;
-    color: #e10600;
+    color: #ffffff;
     margin-right: 15px;
     min-width: 40px;
 }
@@ -112,7 +111,7 @@ header nav a.active {
     text-align: center;
     padding: 40px;
     font-size: 0.9em;
-    color: #888;
+    color: #ffffff;
 }
 
 /* Colores específicos por escudería */
@@ -124,5 +123,6 @@ header nav a.active {
 .team-alpine { border-left-color: #0090ff; }
 .team-williams { border-left-color: #005aff; }
 .team-rb { border-left-color: #6692ff; }
-.team-sauber { border-left-color: #52e252; }
+.team-audi { border-left-color: #ce3419; }
 .team-haas { border-left-color: #ffffff; }
+.team-cadillac { border-left-color: #000000; }
